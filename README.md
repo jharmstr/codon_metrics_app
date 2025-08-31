@@ -94,8 +94,8 @@ Input sequences are automatically normalized (uppercase, U→T, trimmed to full 
 Single-codon amino acids (Met, Trp) are treated as neutral (ratio = 1.0) in Copt calculations.
 Exponential/log transforms require strictly positive values (e.g., when comparing metrics downstream).
 Built-in weights currently cover E. coli and S. cerevisiae only, but additional species can be added by extending the weight dictionaries.
-CAI weights determined by using original CAI definition as done by Sharp et al., and based on codon usage tables from Kazusa (https://www.kazusa.or.jp/codon).
-tAI weights from Sabi et al., as shown at https://tau-tai.azurewebsites.net/
+CAI weights determined by using original CAI definition as done by Sharp et al., and based on codon usage tables from Genscript (https://www.genscript.com/tools/codon-frequency-table)
+tAI weights determined by using original tAI definition as done by dos Reis et al, and based on tRNA counts from gtRNAdb (https://gtrnadb.org/)
 
 ## License
 MIT License - https://mit-license.org/
@@ -108,5 +108,3 @@ Wright, The ‘effective number of codons’ used in a gene, Gene (1990).
 dos Reis et al., Solving the riddle of codon usage preferences: a test for translational selection, Nucleic Acids Research (2004).
 
 Zhou et al., Measuring codon usage bias in microbial genomes, Nucleic Acids Research (2016).
-
-Sabi et al., stAIcalc: tRNA adaptation index calculator based on species-specific weights, Bioinformatics (2016)
